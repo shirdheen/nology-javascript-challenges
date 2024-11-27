@@ -1,7 +1,8 @@
 // Challenge #1 - Calculating Moon Orbits
 
 function moonOrbits(earthDays) {
-  const orbits = Math.round(earthDays / 27.32);
+  const oneOrbit = 27.32;
+  const orbits = parseFloat((earthDays / oneOrbit).toFixed(3));
   return orbits;
 }
 
@@ -10,12 +11,12 @@ console.log(moonOrbits(365));
 // Challenge #2 - Working with Circles
 
 function circleArea(r) {
-  area = Math.PI * r ** 2;
+  area = parseFloat((Math.PI * r ** 2).toFixed(2));
   return area;
 }
 
 function circlePerimeter(r) {
-  perimeter = 2 * Math.PI * r;
+  perimeter = parseFloat((2 * Math.PI * r).toFixed(2));
   return perimeter;
 }
 
@@ -30,7 +31,8 @@ function ageInDays(age) {
 }
 
 function ageinSeconds(age) {
-  seconds = age * 365 * 24 * 60 * 60;
+  const daystoSeconds = 365 * 24 * 60 * 60;
+  seconds = age * daystoSeconds;
   return seconds;
 }
 
