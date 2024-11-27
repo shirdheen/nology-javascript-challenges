@@ -37,7 +37,7 @@ function ageinSeconds(age) {
 console.log(ageInDays(32));
 console.log(ageinSeconds(32));
 
-// Challenge #4
+// Challenge #4 - Return the Remainder for Two Numbers
 
 function remainder(num1, num2) {
   rem = num1 % num2;
@@ -46,7 +46,7 @@ function remainder(num1, num2) {
 
 console.log(remainder(-9, 45));
 
-// Challenge #5
+// Challenge #5 - Basketball Points
 
 function basketballPoints(twoP, threeP) {
   score = 2 * twoP + 3 * threeP;
@@ -54,7 +54,7 @@ function basketballPoints(twoP, threeP) {
 }
 console.log(basketballPoints(2, 3));
 
-// Challenge #6
+// Challenge #6 - Less than 100?
 
 function lessThan100(num1, num2) {
   const sum = num1 + num2;
